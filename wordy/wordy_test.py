@@ -114,3 +114,6 @@ class WordyTest(unittest.TestCase):
             answer("What is 7 plus multiplied by -2?")
         self.assertEqual(type(err.exception), ValueError)
         self.assertEqual(err.exception.args[0], "syntax error")
+
+if __name__ == '__main__':
+    unittest.main()
